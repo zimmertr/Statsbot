@@ -13,3 +13,7 @@ In order to monitor other docker  containers, it is necessary to also configure 
 `docker run -v /var/run/docker.sock:/var/run/docker.sock -v /SaturnPool/Apps/Statsbot/stats.txt:/stats.txt zimmertr/statsbot`  
 
 An example docker-compose for using this in combination with a website can be found here: https://github.com/zimmertr/Personal-Website-With-JS-Terminal-Emulator/blob/master/Docker/docker-compose.yaml  
+
+<p align="center">
+   <img src="https://raw.githubusercontent.com/zimmertr/Statsbot/master/screenshot.png" height="600">
+</p>
