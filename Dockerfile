@@ -4,7 +4,7 @@ RUN touch /stats.txt
 RUN touch /find_stats.sh
 RUN chmod +x /find_stats.sh
 
-RUN echo "* * * * * /bin/sh -c /find_stats.sh > /stats.txt" >> /root/crontab
+RUN echo "*/5 * * * * /bin/sh -c /find_stats.sh > /stats.txt" >> /root/crontab
 RUN crontab /root/crontab
 
 RUN echo "#!/bin/sh" > /find_stats.sh
