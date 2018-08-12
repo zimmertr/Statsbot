@@ -10,7 +10,7 @@ This text file should be volumted mounted somewhere on your webserver or host fo
 
 In order to monitor other docker  containers, it is necessary to also configure a volume mount for the docket unix socket. An example `docker run` is: 
 
-`docker run -v /var/run/docker.sock:/var/run/docker.sock -v /SaturnPool/Apps/Statsbot/stats.txt:/stats.txt zimmertr/statsbot`  
+`docker run -v /var/run/docker.sock:/var/run/docker.sock -v /Apps/Statsbot/stats.txt:/stats.txt zimmertr/statsbot`  
 
 An example docker-compose for using this in combination with a website can be found here: https://github.com/zimmertr/Personal-Website-With-JS-Terminal-Emulator/blob/master/Docker/docker-compose.yaml  
 
